@@ -1,0 +1,21 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "seed": 20260702,
+  "ts": "20260702T163411Z",
+  "per_family": 3,
+  "fingerprints": {
+    "512": {
+      "n": 15,
+      "answered": 15,
+      "abstained": 0,
+      "budget_exceeded": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 0.6,
+      "confident_n": 15,
+      "confident_wrong_rate": 0.4,
+      "mean_conf": 97.2,
+      "overconfidence_gap": 0.372
+    }
+  }
+}

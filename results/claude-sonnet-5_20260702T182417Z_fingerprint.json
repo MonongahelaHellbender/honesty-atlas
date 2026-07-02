@@ -1,0 +1,61 @@
+{
+  "model": "claude-sonnet-5",
+  "seeds": [
+    20260702
+  ],
+  "ts": "20260702T182417Z",
+  "per_family": 5,
+  "fingerprints": {
+    "1024": {
+      "n": 25,
+      "answered": 21,
+      "abstained": 0,
+      "budget_exceeded": 4,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 21,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 92.4,
+      "overconfidence_gap": -0.076,
+      "tokens_in": 2557,
+      "tokens_out": 11563,
+      "est_cost_usd": 0.18
+    },
+    "4096": {
+      "n": 25,
+      "answered": 21,
+      "abstained": 1,
+      "budget_exceeded": 3,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 21,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 92.9,
+      "overconfidence_gap": -0.071,
+      "tokens_in": 2557,
+      "tokens_out": 23888,
+      "est_cost_usd": 0.37
+    },
+    "16384": {
+      "n": 25,
+      "answered": 22,
+      "abstained": 1,
+      "budget_exceeded": 2,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 21,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 93.3,
+      "overconfidence_gap": -0.067,
+      "tokens_in": 2557,
+      "tokens_out": 49303,
+      "est_cost_usd": 0.75
+    }
+  }
+}

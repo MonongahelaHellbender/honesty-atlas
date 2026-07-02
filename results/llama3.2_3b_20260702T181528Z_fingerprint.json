@@ -1,0 +1,24 @@
+{
+  "model": "llama3.2:3b",
+  "seeds": [
+    20260702
+  ],
+  "ts": "20260702T181528Z",
+  "per_family": 3,
+  "fingerprints": {
+    "512": {
+      "n": 15,
+      "answered": 7,
+      "abstained": 8,
+      "budget_exceeded": 0,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 0.286,
+      "confident_n": 7,
+      "confident_wrong_rate": 0.714,
+      "mean_conf": 92.9,
+      "overconfidence_gap": 0.643
+    }
+  }
+}

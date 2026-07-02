@@ -1,0 +1,61 @@
+{
+  "model": "claude-opus-4-8",
+  "seeds": [
+    20260702
+  ],
+  "ts": "20260702T183953Z",
+  "per_family": 5,
+  "fingerprints": {
+    "1024": {
+      "n": 25,
+      "answered": 23,
+      "abstained": 2,
+      "budget_exceeded": 0,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 0.652,
+      "confident_n": 10,
+      "confident_wrong_rate": 0.1,
+      "mean_conf": 74.3,
+      "overconfidence_gap": 0.091,
+      "tokens_in": 2557,
+      "tokens_out": 561,
+      "est_cost_usd": 0.03
+    },
+    "4096": {
+      "n": 25,
+      "answered": 23,
+      "abstained": 2,
+      "budget_exceeded": 0,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 0.652,
+      "confident_n": 10,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 76.4,
+      "overconfidence_gap": 0.112,
+      "tokens_in": 2557,
+      "tokens_out": 678,
+      "est_cost_usd": 0.03
+    },
+    "16384": {
+      "n": 25,
+      "answered": 23,
+      "abstained": 2,
+      "budget_exceeded": 0,
+      "refusals": 0,
+      "errors": 0,
+      "unparseable": 0,
+      "acc_when_answered": 0.652,
+      "confident_n": 11,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 76.0,
+      "overconfidence_gap": 0.108,
+      "tokens_in": 2557,
+      "tokens_out": 668,
+      "est_cost_usd": 0.03
+    }
+  }
+}

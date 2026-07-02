@@ -1,0 +1,47 @@
+{
+  "model": "claude-fable-5",
+  "seed": 20260702,
+  "ts": "20260702T163945Z",
+  "per_family": 5,
+  "fingerprints": {
+    "1024": {
+      "n": 25,
+      "answered": 20,
+      "abstained": 0,
+      "budget_exceeded": 4,
+      "errors": 1,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 20,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 96.5,
+      "overconfidence_gap": -0.035
+    },
+    "4096": {
+      "n": 25,
+      "answered": 21,
+      "abstained": 0,
+      "budget_exceeded": 3,
+      "errors": 1,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 21,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 96.3,
+      "overconfidence_gap": -0.037
+    },
+    "16384": {
+      "n": 25,
+      "answered": 20,
+      "abstained": 0,
+      "budget_exceeded": 3,
+      "errors": 2,
+      "unparseable": 0,
+      "acc_when_answered": 1.0,
+      "confident_n": 20,
+      "confident_wrong_rate": 0.0,
+      "mean_conf": 96.1,
+      "overconfidence_gap": -0.039
+    }
+  }
+}
