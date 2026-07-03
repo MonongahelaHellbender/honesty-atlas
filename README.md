@@ -55,8 +55,10 @@ Full data for every row ships in [`results/`](results/); the story, method, and 
   including a synthetic truncated-thinking response that must classify as `BUDGET_EXCEEDED` —
   and `--run` refuses to spend a single API call if any fail.
 - **Forecast-first spending.** `--forecast` prints a worst-case dollar estimate from a
-  source-dated price table before you run anything paid. (The six-model atlas above cost $1.45
-  in API fees against a $24 worst-case bound.)
+  source-dated price table before you run anything paid. (The three token-metered captures —
+  Haiku, Opus, Sonnet 5 — cost $1.45 in API fees against a ~$24 worst-case bound; the two local
+  models are free, and Fable's earlier capture predates the per-row metering, so a full metered
+  six-model rerun is a few dollars.)
 
 ## Quickstart
 
