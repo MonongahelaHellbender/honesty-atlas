@@ -77,8 +77,12 @@ via the Messages API (key read from the environment only).
 
 The direction of these findings **reconfirms published work** — budget-induced calibration
 drift (arXiv:2606.11211), over-reasoning harming calibration (arXiv:2508.15050), reasoning
-degrading abstention (arXiv:2506.09038), and the need to validity-screen confidence signals
-(arXiv:2604.17714). This repo's contribution is the **instrument**: contamination-free
+degrading abstention (arXiv:2506.09038, and at benchmark scale AbstentionBench's finding
+that reasoning fine-tuning *worsens* abstention), and the need to validity-screen confidence
+signals (arXiv:2604.17714). Relative to abstention benchmarks like AbstentionBench (20
+datasets, 35k+ queries), this instrument trades breadth for contamination-immunity and
+structural honesty: fresh oracle-checkable instances generated per run, and silence classified
+from the API's stop reason rather than counted as an abstention token. This repo's contribution is the **instrument**: contamination-free
 generation, deterministic grading, classified failure modes, a harness that validates itself
 before every run — and a growing longitudinal archive of fingerprints captured on the *same*
 instrument across model generations. It is a measurement tool, not a discovery claim.
