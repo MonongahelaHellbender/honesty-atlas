@@ -43,5 +43,9 @@
       "mean_conf": 96.1,
       "overconfidence_gap": -0.039
     }
-  }
+  },
+  "seeds": [
+    20260702
+  ],
+  "seeds_backfilled_note": "recovered from per-row jsonl (seeds field not persisted by the capture-time code); insight #75 provenance backfill 2026-07-11"
 }
