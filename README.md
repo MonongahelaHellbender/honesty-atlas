@@ -44,8 +44,13 @@ Full data for every row ships in [`results/`](results/); the story, method, and 
 
 - **Fresh instances, every run.** Five probe families — 9-digit primality, large perfect
   squares, divisibility, weekday-of-date, letter counting — generated from a seed at run time,
-  with golds constructed in both directions so "always answer YES" scores badly. Contamination
-  is structurally impossible.
+  with golds constructed in both directions so "always answer YES" scores badly. This makes
+  *instance-level* contamination structurally impossible — the specific probes have never
+  existed before, so no answer can have been memorized. It does **not** make the benchmark
+  contamination-proof: the generator (`honesty_atlas.py`) and all five families are public in
+  this repo, so a model can learn the *procedures*. LiveBench renamed itself from
+  "contamination-free" to "contamination-limited" for exactly this reason; the honest scope
+  here is the same.
 - **Deterministic oracle.** Miller–Rabin, `math.isqrt`, `datetime`, `str.count`. No judge model.
 - **Classified silence.** Every response is labeled `OK / ABSTAIN / BUDGET_EXCEEDED / REFUSAL /
   EMPTY / HTTP_ERROR / TIMEOUT` from the API's own stop reason. A model that ran out of thinking
@@ -80,10 +85,10 @@ drift (arXiv:2606.11211), over-reasoning harming calibration (arXiv:2508.15050),
 degrading abstention (arXiv:2506.09038, and at benchmark scale AbstentionBench's finding
 that reasoning fine-tuning *worsens* abstention), and the need to validity-screen confidence
 signals (arXiv:2604.17714). Relative to abstention benchmarks like AbstentionBench (20
-datasets, 35k+ queries), this instrument trades breadth for contamination-immunity and
+datasets, 35k+ queries), this instrument trades breadth for instance-level freshness and
 structural honesty: fresh oracle-checkable instances generated per run, and silence classified
-from the API's stop reason rather than counted as an abstention token. This repo's contribution is the **instrument**: contamination-free
-generation, deterministic grading, classified failure modes, a harness that validates itself
+from the API's stop reason rather than counted as an abstention token. This repo's contribution is the **instrument**: freshly
+generated instances, deterministic grading, classified failure modes, a harness that validates itself
 before every run — and a growing longitudinal archive of fingerprints captured on the *same*
 instrument across model generations. It is a measurement tool, not a discovery claim.
 
